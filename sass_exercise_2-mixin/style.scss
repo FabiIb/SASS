@@ -10,7 +10,7 @@ $color-tertiary: green;
 $font-size: 15px;
 $spacer: 1rem;
 
-@mixin article-card($color, $border-color, $font-size: 24px, $spacer: 1rem) {
+@mixin article-card($color, $border-color, $font-size: 24px) {
   color: $color;
   border: 1px solid $border-color;
   font-size: $font-size;
