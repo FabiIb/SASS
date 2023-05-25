@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+body {
+  border: 1px $color-primary solid;
+}
+section {
+  display: flex;
+  padding: 20px;
+  article {
+    border: 1px $color-tertiary solid;
+    padding: 20px;
+
+    &:nth-child(odd) {
+      color: $color-secondary;
+    }
+
+    &:nth-child(even) {
+      color: $color-primary;
+    }
+  }
+}
+
+div {
+  text-align: center;
+  padding: 20px;
+  h1 {
+    color: $color-tertiary;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: $color-secondary;
+  }
+}
